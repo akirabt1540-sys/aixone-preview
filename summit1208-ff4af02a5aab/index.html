@@ -180,7 +180,7 @@ p{margin:0}
 .ov small{display:block;font-size:14px;color:var(--muted)}
 .mail{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
 .mail code{font-family:var(--f-body);font-size:16px;font-weight:700;user-select:all}
-.copy{background:#fff;border:1px solid var(--accent);color:var(--accent);font:inherit;font-size:12px;padding:3px 12px;border-radius:3px;cursor:pointer}
+.copy{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--accent);color:var(--accent);font:inherit;font-size:12px;padding:3px 12px;border-radius:3px;cursor:pointer}
 @media (max-width:560px){.ov{grid-template-columns:1fr}.ov dt{border-bottom:0;padding-bottom:0}.ov dd{padding-top:4px}}
 
 /* band: 主催・掲載 */
@@ -331,7 +331,7 @@ p{margin:0}
         <dt>申込締切</dt><dd class="num">2026年12月7日（月）</dd>
         <dt>主催</dt><dd>AIx ONE（株式会社FCE）</dd>
         <dt id="contact">お問い合わせ</dt>
-        <dd><div class="mail"><span>AIx ONE 主催局</span><code id="mail">omniinfo@fce-hd.co.jp</code><button class="copy" id="copy" type="button">コピー</button></div></dd>
+        <dd><div class="mail"><span>AIx ONE 主催局</span><a class="copy" href="https://fce-aixone.com/#contact" target="_blank" rel="noopener">お問い合わせフォームはこちら</a></div></dd>
       </dl>
     </div>
   </section>
@@ -365,7 +365,7 @@ p{margin:0}
 <footer class="ft">© AIx ONE（株式会社FCE）</footer>
 
 <script>
-document.getElementById('copy').addEventListener('click', async (e) => {
+document.getElementById('copy')?.addEventListener('click', async (e) => {
   const btn = e.currentTarget, text = document.getElementById('mail').textContent;
   try { await navigator.clipboard.writeText(text); btn.textContent = 'コピーしました'; }
   catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = '選択しました'; }
