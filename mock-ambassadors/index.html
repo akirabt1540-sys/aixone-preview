@@ -2148,14 +2148,20 @@ body{font-size:16px;}
 }
 @media (max-width:767px){
   .ambx-hero{padding:72px 0 48px;}
-  .ambx-e{grid-template-columns:150px minmax(0,1fr);gap:0 20px;width:100%;padding-top:24px;}
+  .ambx-flow{gap:56px;}
+  .ambx-e{display:block;width:100%;padding-top:0;}
+  .ambx-e::before{display:none;}
   .ambx-e.r{align-self:stretch;}
-  .ambx-ph{width:150px;}
-  .ambx-ph.mono span{font-size:32px;} .ambx-ph.mono small{left:8px;bottom:6px;font-size:9px;}
-  .ambx-e .tx{padding-top:0;}
-  .ambx-e h3{font-size:22px;margin-top:8px;}
+  .ambx-ph{width:100%;aspect-ratio:4/5;border:0;border-radius:4px;}
+  .ambx-ph img{object-position:50% 12%;filter:grayscale(1) contrast(1.06) brightness(.94);}
+  .ambx-ph::after{content:"";position:absolute;inset:auto 0 0 0;height:58%;background:linear-gradient(180deg,rgba(16,16,36,0) 0%,rgba(16,16,36,.55) 45%,rgba(16,16,36,.96) 100%);}
+  .ambx-e .tx{position:relative;z-index:1;padding:0 18px;margin-top:-118px;}
+  .ambx-e .eb{font-size:10px;letter-spacing:.3em;}
+  .ambx-e h3{font-size:30px;margin-top:8px;line-height:1.25;letter-spacing:.1em;}
+  .ambx-e .en{font-size:11.5px;margin-top:4px;}
   .ambx-e .co{margin-top:10px;font-size:13px;}
-  .ambx-e .bio{grid-column:1/3;margin-top:22px;}
+  .ambx-e .bio{margin-top:18px;font-size:13.5px;line-height:1.9;}
+  .ambx-e .bio p+p{margin-top:.8em;}
   .ambx-btns .btn{width:100%;}
 }
 
