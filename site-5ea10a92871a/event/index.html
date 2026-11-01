@@ -2183,6 +2183,8 @@ body{font-size:16px;}
 #ambassador-content h1,#ambassador-content h2{color:inherit;}
 #ambassador-content .amb-hero{min-height:calc(100svh - 64px);margin:0;}
 </style>
+<style>.privacy-document{max-width:960px;padding-bottom:100px;overflow-wrap:anywhere}.privacy-document p{font-size:16px;line-height:1.95;margin:0 0 16px;letter-spacing:.02em}.privacy-document h2{font-size:23px;line-height:1.6;margin:44px 0 20px;padding-bottom:12px;border-bottom:1px solid #dce1eb}.privacy-document h3{font-size:18px;line-height:1.7;margin:28px 0 14px}.privacy-document>h2:first-child{margin-top:0}@media(max-width:640px){[data-page="privacy"] .display{font-size:30px}.privacy-document p{font-size:15px}.privacy-document h2{font-size:20px}}</style>
+<style>.privacy-document .privacy-issuer{font-size:14px;font-weight:400;letter-spacing:.02em;color:#666c78;margin:0 0 30px}.privacy-document .privacy-intro-heading{font-size:28px;margin:0 0 26px;padding:0;border:0;line-height:1.5}.privacy-document .privacy-policy-heading{font-size:19px;margin:0 0 14px;padding:0;border:0;line-height:1.7}@media(max-width:640px){.privacy-document .privacy-intro-heading{font-size:24px}.privacy-document .privacy-policy-heading{font-size:17px}.privacy-document .privacy-issuer{font-size:13px;margin-bottom:24px}}</style>
 <style>
 /* ---------- イベント一覧（#events） ---------- */
 
@@ -2220,6 +2222,7 @@ body{font-size:16px;}
 .ev-h{flex-wrap:wrap}.ev-card:focus-visible{outline:3px solid var(--blue);outline-offset:4px}.ev-card:hover{text-decoration:none}
 .ev-desc,.ev-meta{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;letter-spacing:0;color:#28303b;font-style:normal}.ev-desc{font-size:14px;font-weight:400;line-height:1.9}.ev-meta{font-size:13px;font-weight:500;line-height:1.85;row-gap:8px}.ev-meta dt{font-weight:700;color:#14141f}.ev-meta dd{margin:0}
 .ev-tags{display:block;line-height:1.9;font-size:0}.ev-tag,.ev-tag.exec,.ev-tag.student{display:inline-block;vertical-align:middle;padding:0;border:0;border-radius:0;background:none;color:#424853;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-size:12px;font-weight:500;letter-spacing:0;line-height:1.5;margin:3px 0}.ev-tag+.ev-tag{border-left:1px solid #c7cad0;margin-left:12px;padding-left:12px}
+.ev-thumb{aspect-ratio:auto;align-self:start}.ev-thumb img{height:auto;object-fit:contain}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -2304,20 +2307,10 @@ body{font-size:16px;}
       <div class="ev-h"><h2 class="h3">開催予定のイベント</h2><span class="en">UPCOMING</span></div>
       <div class="ev-list">
 
-        <a class="ev-card" data-aud="exec student" href="https://www.fce-aixone.com/event/2610event/" target="_blank" rel="noopener noreferrer">
-          <div class="ev-thumb"><img src="https://www.fce-aixone.com/assets/event-2610.jpg" alt="10月30日 学生×経営者 対談ライブ" loading="lazy"><span class="ev-status">受付中</span></div>
-          <div class="ev-body">
-            <div class="ev-date"><span class="d">10.30</span><span class="w">（金）</span><span class="t">13:00–14:30</span></div>
-            <div class="ev-tags"><span class="ev-tag exec">経営者・役員</span><span class="ev-tag student">大学生</span><span class="ev-tag">オンライン（Zoom）</span><span class="ev-tag">参加無料</span></div>
-            <p class="ev-ttl"><small>AIx ONE 第1回イベント</small>学生×経営者 対談ライブ<br>あなたの会社のAI、まだ“検索の延長”ですか。</p>
-            <p class="ev-desc">AIを使いこなす20代の起業家2人に、経営者が「何を、どこまで、いくらで」と直接聞く90分。顔出し不要、申込者全員に見逃し配信があります。</p>
-            <dl class="ev-meta"><dt>登壇</dt><dd>郷 由稀斗／伊東 和成（司会 鈴木 ななみ）</dd><dt>形式</dt><dd>Zoomオンライン配信</dd></dl>
-            <span class="btn primary">詳細・お申し込み</span>
-          </div>
-        </a>
+        
 
         <a class="ev-card" data-aud="exec" href="https://www.fce-aixone.com/event/2612presidentevent/" target="_blank" rel="noopener noreferrer">
-          <div class="ev-thumb" style="background:#141B33"><img src="https://www.fce-aixone.com/assets/event-2612.jpg" alt="12月8日 AIx ONE Leaders Summit" loading="lazy" style="object-fit:contain"><span class="ev-status">受付中・定員100名</span></div>
+          <div class="ev-thumb"><img src="https://www.fce-aixone.com/assets/event-2612.jpg" alt="12月8日 AIx ONE Leaders Summit" loading="lazy" style="object-position:left center"><span class="ev-status">受付中・定員100名</span></div>
           <div class="ev-body">
             <div class="ev-date"><span class="d">12.08</span><span class="w">（火）</span><span class="t">18:00–20:30</span></div>
             <div class="ev-tags"><span class="ev-tag exec">経営者・経営幹部 限定</span><span class="ev-tag">会場（新宿）</span><span class="ev-tag">参加無料・懇親会つき</span></div>
@@ -2335,7 +2328,17 @@ body{font-size:16px;}
   <div class="sec" id="events-archive">
     <div class="wrap">
       <div class="ev-h"><h2 class="h3">終了したイベント</h2><span class="en">ARCHIVE</span></div>
-      <div class="ev-empty">終了したイベントはありません</div>
+      <div class="ev-list"><a class="ev-card" data-aud="exec student" href="https://www.fce-aixone.com/event/2610event/" target="_blank" rel="noopener noreferrer">
+          <div class="ev-thumb"><img src="https://www.fce-aixone.com/assets/event-2610.jpg" alt="10月30日 学生×経営者 対談ライブ" loading="lazy"><span class="ev-status">終了</span></div>
+          <div class="ev-body">
+            <div class="ev-date"><span class="d">10.30</span><span class="w">（金）</span><span class="t">13:00–14:30</span></div>
+            <div class="ev-tags"><span class="ev-tag exec">経営者・役員</span><span class="ev-tag student">大学生</span><span class="ev-tag">オンライン（Zoom）</span><span class="ev-tag">参加無料</span></div>
+            <p class="ev-ttl"><small>AIx ONE 第1回イベント</small>学生×経営者 対談ライブ<br>あなたの会社のAI、まだ“検索の延長”ですか。</p>
+            <p class="ev-desc">AIを使いこなす20代の起業家2人に、経営者が「何を、どこまで、いくらで」と直接聞く90分。顔出し不要、申込者全員に見逃し配信があります。</p>
+            <dl class="ev-meta"><dt>登壇</dt><dd>郷 由稀斗／伊東 和成（司会 鈴木 ななみ）</dd><dt>形式</dt><dd>Zoomオンライン配信</dd></dl>
+            <span class="btn primary">イベント詳細を見る</span>
+          </div>
+        </a></div>
     </div>
   </div>
   <script>
@@ -2798,5 +2801,5 @@ body{font-size:16px;}
 
 
 
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a53b73f5be98deb5',t:'MTc5MzU0MTkxMQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a53b73f5be98deb5',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
